@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Html form</title>
+</head>
+<style>
+    body{
+        background-color:rgb(0, 255, 149);
+        background-size: cover;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container
+    {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        border: 2px solid black;
+        padding: 34px;
+        border-radius: 22px;
+    }
+    .container h1
+    {
+        font-size: 40px;
+        /* text-decoration: underline; */
+        padding: 20px;
+        border-bottom: 2px solid purple;
+        margin-left: 0px;
+        padding-left: 0px;
+        color: white;
+    }
+    .box{
+        width: 75%;
+        border-bottom: 2px solid purple;
+        
+    }
+    .box :placeholder-shown
+    {
+        font-display: block;
+    }
+   
+    .box input
+    {
+        width: 90%;
+        outline: none;
+        margin: 10px;
+        font-size: 18px;
+        /* border: 2px solid blue;
+        border-radius: 10px; */
+        /* text-align: center; */
+       
+       
+        padding: 1px;
+        background: none;
+        /* color: white; */
+        border: none;
+  
+
+    }
+    .btn
+    {
+        font-size: 15px;
+        border: 2px solid purple;
+        border-radius: 10px;
+        padding: 7px 30px;
+        margin: 9px ;
+        outline: none;
+        margin-left: 8px;
+        background: none;
+        cursor: pointer;
+
+    }
+    .btn:hover
+    {
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>Login Page</h1>
+        <div class="box">
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+
+        </div>
+        <div class="box">
+            <input type="password" name="password" id="password" placeholder="Enter your Password"> 
+
+        </div>
+        <a href="" style="display: block; margin: 10px; text-decoration: none;">New User</a>
+        <button class="btn">Sign in</button>
+    </div>
+
+
+
+</body>
+</html>
